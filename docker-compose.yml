@@ -38,6 +38,8 @@ services:
         environment:
             MYSQL_DATABASE: biblioteca
             MYSQL_ROOT_PASSWORD: 12345678
+            MYSQL_CHARSET: utf8mb4
+            MYSQL_COLLATION: utf8mb4_general_ci
         volumes:
             - ./.docker/mysql/.data:/var/lib/mysql
         ports:
